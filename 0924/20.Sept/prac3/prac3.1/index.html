@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" class="box">
+      <div class="container">
+        <h3>Отправить данные</h3>
+        <div class="field__container">
+          <div class="field__form">
+            <p>Имя пользователя</p>
+            <input type="text" required />
+          </div>
+          <div class="field__form">
+            <p>Почта</p>
+            <input type="text" required />
+          </div>
+          <div class="field__form">
+            <p>Телефон</p>
+            <input type="text" required />
+          </div>
+          <div class="field__form">
+            <p>Компания</p>
+            <input type="text" required />
+          </div>
+        </div>
+        <div class="field__form-button">
+          <input type="submit" value="Submit" />
+        </div>
+      </div>
+    </form>
+
+    <!-- Hier werden die Boxen 1 und 2 nebeneinander angezeigt. -->
+    <div style="display: flex">
+      <div>Box 1</div>
+      <div>Box 2</div>
+    </div>
+
+    <!-- Hier wird bei wenig Platz (z. B. auf einem kleinen Bildschirm) Box 3 und 4 in die nächste Zeile verschoben. + vom MAK; justify-content: space-between; und margin:10px; -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 10px;">
+      <div><h1>Box 1</h1></div>
+      <div><h1>Box 2</h1></div>
+      <div><h1>Box 3</h1></div>
+      <div><h1>Box 4</h1></div>
+    </div>
+
+    <!-- Hier siehst du, dass Box 1 am linken Rand und Box 3 am rechten Rand stehen, und der Rest des Platzes zwischen den Boxen verteilt wird. -->
+    <div style="display: flex; justify-content: space-between">
+      <div>Box 1</div>
+      <div>Box 2</div>
+      <div>Box 3</div>
+    </div>
+
+    <!-- Hier nimmt der Absatz die gesamte Breite des Containers ein. -->
+    <p style="display: block; font-size: 40px">Dies ist ein Block-Element</p>
+  
+    <a href="https://www.figma.com/design/1j2hMJjl0iwAUyWde1FWB8/Base?node-id=3388-9&node-type=frame&t=8wor3g8ze7SYmnjY-0">Ligma Registration</a>
+  </body>
+</html>

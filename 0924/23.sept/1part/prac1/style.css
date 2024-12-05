@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+.container{
+    width: 500px;
+    height: 250px;
+    margin: 10px auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kub{
+    width: 45px;
+    height: 45px;
+    background-color: red;
+}
+
+.container2{
+    width: 500px;
+    height: 250px;
+    margin: 10px auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    /* align-content ne isoolzuem */
+}
+
+.kub2{
+    width: 45px;
+    height: 45px;
+    background-color: red;
+}

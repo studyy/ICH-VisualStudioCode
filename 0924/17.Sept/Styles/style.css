@@ -1,0 +1,70 @@
+/* * - абсолютный селектор */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Здесь мы объявили стилизацию по селектору тега */
+
+h2 {
+  color: red;
+}
+
+.greetings {
+  color: white;
+  background-color: #333331;
+  border-radius: 20px;
+  padding: 10px;
+  /* margin: 10px; */
+}
+/* селектор класса в приоритете над тегом */
+.greetings3 {
+  color: magenta;
+  background-color: aqua;
+  /* padding margin принимают 4 зачения свойства отвечающие соронам верх - право - низ - лево. По часовой стрелке*/
+  padding: 10px 50px 40px 100px;
+  margin: 40px 100px 10px 50px;
+}
+
+.radius {
+  border-radius: 8px;
+}
+
+.border {
+  border: 3px solid magenta;
+}
+
+/* селектор id - самый приортитеный для браузера */
+#uniqueId {
+  background-color: red;
+}
+
+.idClass {
+  background-color: magenta;
+}
+
+button[type="submit"] {
+  background-color: transparent;
+  /* в случае написания у padding, margin двух значений свойства, первое воспринимается как верх - низ, второе как право - лево */
+  padding: 0 10px;
+}
+
+.paragraph {
+  /* чтобы центрировать элемент с помощью св-ва margin: 0 auto; мы ДОЛЖНЫ ограничить ширину контента центрируемого элемента width || max-width */
+  margin: 0 auto;
+  max-width: 400px;
+
+  /* border: 5px solid magenta; */
+  /* border-top: 5px solid magenta;
+    border-bottom: 5px solid magenta;
+    border-left: 5px solid magenta;
+    border-right: 5px solid magenta; */
+  position: relative;
+}
+
+.paragraph::before {
+  position: absolute;
+  content: "";
+  border: 1px solid black;
+  width: 100%;
+}

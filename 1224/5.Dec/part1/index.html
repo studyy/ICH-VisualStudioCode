@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Создать навигационное меню, которое будет открываться, выезжая из края экрана. Само меню - абсолютно позиционированный блок с заданным свойством transform: translateX, которое будет меняться в зависимости от состояния меню -->
+    <nav>
+      <span
+        id="openButton"
+        onclick="toggleMenu()"
+        class="material-symbols-rounded"
+        style="color: white"
+      >
+        menu
+      </span>
+      <div id="navMenu" class="nav-menu">
+        <span
+          id="closeButton"
+          class="material-symbols-rounded"
+          onclick="toggleMenu()"
+          style="color: white"
+        >
+          cancel
+        </span>
+        <div class="nav-menu__item">Element 1</div>
+        <div class="nav-menu__item">Element 2</div>
+        <div class="nav-menu__item">Element 3</div>
+        <div class="nav-menu__item">Element 4</div>
+      </div>
+    </nav>
+
+    <!-- Вторая часть. Всплывающее окно - уведомление -->
+
+    <!-- 1. Реализовать всплывающие уведомления: уведомление должно вызываться с помощью функции “конструктора” уведомления, которая принимает название, текст и тип уведомления (успех, предупреждение, ошибка). 
+    2. Сверстать форму, после отправки которой появляется уведомление о том, что заказ успешно создан, а также появляются 3 кнопки: “Заказ оплачен”, “Заказ отправлен”, “Заказ получен”, при нажатии на которые появляется уведомление с соответствующим сообщением. -->
+    <div class="block">
+      <form>
+        <input type="text" placeholder="Address" required />
+        <input type="text" placeholder="Price" required />
+        <input type="text" placeholder="Recipient" required />
+        <button type="submit">Create</button>
+      </form>
+      <!-- перепутали id class и стилей нет для него -->
+      <div class="buttons buttons--hidden" id="buttons">
+        <button id="buttonPaid">Order was paid</button>
+        <button id="buttonSent">Order was sent</button>
+        <button id="buttonGet">Order was received</button>
+      </div>
+      <div class="notifications-container" id="notificationsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

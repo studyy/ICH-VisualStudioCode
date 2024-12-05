@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header ul li a:hover {
+  color: red;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+}
+
+/* применяются стили при наведении мышки(в телефоне при клике на элемент) */
+.box:hover {
+  background-color: red;
+  /* отвечает за плавность анимации */
+  transition: 0.5s;
+}
+
+/* применяются стили по определенному действию */
+.active__btn:hover {
+  background-color: yellow;
+}
+
+.active__btn:active {
+  background-color: red;
+}
+
+/* стили применяются при выбранном инпуте который можно пикнуть (состояние checked у инпута) */
+input[type="radio" i]:checked {
+  background: black;
+}
+
+input[type="checkbox"]:checked {
+  width: 200px;
+}
+
+.disabled__btn {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.disabled__btn:disabled {
+  border: 2px solid gray;
+}
+
+.focus__input:focus {
+  border: 1px solid teal;
+  padding: 5px 10px;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* применяется на ссылки, которые мы еще не посещали */
+a:link {
+  color: magenta;
+}
+
+/* .item:first-child {
+  background-color: red;
+}
+
+.item:last-child {
+  background-color: blue;
+} */
+
+/* .item:nth-child(3) {
+  background-color: gold;
+}
+
+.item:nth-child(2) {
+  background-color: green;
+}
+
+.item:nth-child(1) {
+  background-color: hotpink;
+}
+
+.item:nth-child(5) {
+  background-color: yellow;
+} */
+
+.item:nth-child(odd) {
+  background: hotpink;
+}

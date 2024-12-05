@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-column-start: 3;
+    /* выравнивает все элементы грида по горизонтали */
+    justify-items: center;
+    /* все элементы грида по вертикали */
+    align-items: center;
+    position: relative;
+}
+
+.list li:last-child {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    grid-column-start: 6;
+    grid-row-start: 3;
+    /* применяется индивидуально к конкретной ячейке для выравнивания по горизонтали исключительно ее в рамках общей структуры */
+    justify-self: flex-end;
+    /* тоже самое но по вертикали */
+    align-self: flex-end;
+    position: absolute;
+    bottom: -10px;
+}
+/* 
+.list2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+} */

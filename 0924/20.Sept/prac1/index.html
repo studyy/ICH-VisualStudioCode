@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- тег form - инициализация формы отправки данных на сервер -->
+    <form class="container">
+        <div class="container__content">
+            <h3>Авторизация</h3>
+            <div class="field__form">
+                <input type="text" placeholder="Логин" required>
+            </div>
+            <div class="field__form">
+                <input type="text" placeholder="Пароль" required>
+            </div>
+            <div class="field__form-bottom">
+                <!-- input с типом сабмит или ресет принадлежит только форме и работает исключительно в ней. Они могут быть в единственном экземпляре -->
+                <input type="submit" placeholder="Войти" >
+                <input class="input__clean" type="reset" placeholder="Очистить поле">
+            </div>
+            <div class="field__form-checkbox">
+                <label>
+                    <input type="checkbox">
+                    Запомнить меня
+                </label>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

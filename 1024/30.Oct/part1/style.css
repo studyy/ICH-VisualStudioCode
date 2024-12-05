@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body .dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body .light {
+  background-color: #ffffff;
+  color: #000000;
+} */
+
+[data-theme='light'] > body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+[data-theme='dark'] > body {
+  background-color: #000000;
+  color: #ffffff;
+}

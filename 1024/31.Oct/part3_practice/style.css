@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playwrite GB S', cursive;
+  padding: 5%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label__input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#btn,
+input {
+  font-family: 'Playwrite GB S', cursive;
+  outline: none;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid teal;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+dl {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid teal;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+dt,
+dd {
+  width: fit-content;
+  border-bottom: 1px solid magenta;
+  padding-bottom: 2px;
+}

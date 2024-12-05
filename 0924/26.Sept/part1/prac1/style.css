@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.links a:hover{
+    color: red;
+}
+
+.links2 a:link{
+    color: green;
+}
+
+.paragraph p:nth-child(even){
+    color: red;
+}

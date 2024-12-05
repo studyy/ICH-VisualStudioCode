@@ -1,0 +1,14 @@
+.content {
+  padding: 10px;
+  border: 1px solid red;
+  background: rosybrown;
+  border-radius: 8px;
+}
+
+.text {
+  font-size: 100px;
+  color: red;
+}
+.active {
+  color: red;
+}

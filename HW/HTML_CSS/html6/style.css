@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(63, 165, 165);
+}
+.box {
+  border: none;
+  border-radius: 10px;
+  background-color: aquamarine;
+  width: 500px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fieldset__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.Fieldsets {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid black;
+  padding: 0 5px 5px 5px;
+}
+
+.Fieldsets2 {
+  /* width: fit-content; */
+  width: 50%;
+}
+
+.submit {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 2px;
+}

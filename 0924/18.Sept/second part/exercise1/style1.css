@@ -1,0 +1,26 @@
+*{
+    padding: o;
+    margin: 0;
+}
+
+.th {
+    color: yellow;
+    background-color: red;
+    border: 3px solid blue;
+    width: fit-content;
+}
+
+.td{
+    color: white;
+    border: 1px solid red;
+    background-color: blue;
+    width: fit-content;
+}
+
+.input__password {
+    border: 0.5px solid black;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background: transparent;
+    outline: none;
+}

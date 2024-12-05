@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 2000px;
+}
+.circle1{
+    background-color: grey;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.circle1::before{
+    content: '';
+    position: absolute;
+    top: -70px;
+    left: 30px;
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+
+.circle1::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    background-color: green;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /* z-index: -1; */
+}
+
+.car{
+    width: 183px;
+    height: 80px;
+    background-color: blue;
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+
+.car::before{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: -15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.car::after{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    right: -15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(8, 239, 16);
+}
+
+.truba{
+    background-color: black;
+    height: 33px;
+    width: 5px;
+    position: absolute;
+    top: -23px;
+    left: 41px;
+}
+
+.karto4ka{
+    position: relative;
+    top: 300px;
+    left: 150px;
+    border: 1px solid black;
+    width: 233px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.karto4ka::before{
+    background-color: red;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    content: '';
+    position: absolute;
+    top: -45px;
+    right: -45px;
+}
+
+.karto4ka::after{
+    background-color: red;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    content: '';
+    position: absolute;
+    bottom: -45px;
+    left: -45px;
+    z-index: -1;
+}
+
+.karto4ka img{
+    height: 222px;
+    width: 159px;
+    margin: 0 auto;
+}
+
+.karto4ka button{
+    width: fit-content;
+    margin: 0 auto;
+}

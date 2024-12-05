@@ -1,0 +1,16 @@
+.input1{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgb(228, 239, 239);
+}
+
+.button1{
+    margin: 10px;
+    padding: 5px;
+    font-size: 18px;
+    color: red;
+    border: 1 solid black;
+    background-color: transparent;
+}

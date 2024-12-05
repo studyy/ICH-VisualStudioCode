@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.post {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.card {
+  width: 250px;
+  height: 400px;
+  border: 1px solid black;
+  padding: 20px;
+}
+.card img {
+  width: fit-content;
+  margin: 0 auto;
+}
+.card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 15px;
+}
+.card ul li {
+  border-bottom: 1px solid black;
+}
+.cat img {
+  width: 300px;
+}

@@ -1,0 +1,47 @@
+$mainColor: #333331;
+$BR: 8px;
+$margin-center: 0 auto;
+
+@mixin IIII {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  border-radius: $BR;
+}
+
+.container {
+  padding: 10px;
+  border-radius: $BR;
+  background-color: $mainColor;
+  color: white;
+  max-width: fit-content;
+  margin: $margin-center;
+
+  p {
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: $BR;
+
+    span {
+      background: black;
+      border-radius: $BR;
+      color: red;
+      padding: 2px;
+    }
+
+    &:hover {
+      color: teal;
+    }
+  }
+
+  &__element {
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    background: red;
+  }
+}

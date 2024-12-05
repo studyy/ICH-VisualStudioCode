@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    background-color: orange;
+    margin-bottom: 20px;
+}
+
+.Text{
+    background-color: aquamarine;
+}
+
+h2{
+    padding: 10px;
+}
+p{
+    padding-left: 30px;
+}

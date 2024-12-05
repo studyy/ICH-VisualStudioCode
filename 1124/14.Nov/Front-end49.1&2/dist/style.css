@@ -1,0 +1,35 @@
+body {
+  border-radius: 8px;
+}
+
+.container {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #333331;
+  color: white;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+.container p {
+  padding: 5px;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+}
+.container p span {
+  background: black;
+  border-radius: 8px;
+  color: red;
+  padding: 2px;
+}
+.container p:hover {
+  color: teal;
+}
+.container__element {
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  background: red;
+}
+
+/*# sourceMappingURL=style.css.map */

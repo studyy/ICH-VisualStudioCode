@@ -1,0 +1,11 @@
+*{
+    padding: 10;
+    margin: 10;
+}
+
+.cat{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background: url('./Assets/cat1.jpg') no-repeat center center/ contain aquamarine;
+} 

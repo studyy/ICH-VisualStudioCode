@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.textbox h2{ 
+    margin: 10px auto;
+    padding: 30px;
+    position: relative;
+    background-color: teal;
+    width: fit-content;
+}
+
+.textbox h2::before{
+    content: '=_=';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 30px;
+}
+
+.textbox h2::after{
+    content: '^ ^';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 40pxpx;
+    height: 30px;
+}

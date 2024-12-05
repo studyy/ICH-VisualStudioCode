@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #1abc9c;
+  padding: 15px 70px;
+}
+
+.middle ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.middle ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+}
+
+.Section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.Section1 img {
+  max-width: 50%;
+  height: auto;
+}
+
+.aboutUs {
+  margin: 0 70px 10px 70px;
+}
+
+.aboutUs h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.Section2 {
+  background-color: #dcffeb;
+  padding: 125px 65px;
+}
+
+.Section2 h2 {
+  margin-bottom: 50px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  gap: 37px;
+  position: relative;
+}
+
+.projects img {
+  max-width: 33%;
+  height: auto;
+}
+
+/* ::before:&&:after dont work on img??? */
+
+.image::before {
+  content: "Арена";
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  top: 235px;
+  left: 36px;
+}
+
+.image::after {
+  content: "Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву.";
+  width: 364px;
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  top: 275px;
+  left: 36px;
+}
+
+footer {
+  padding: 70px;
+}
+
+footer h2 {
+  margin-bottom: 55px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 38px;
+}
+
+.contacts li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts li h3 {
+  margin: 36px 0 25px 0;
+}

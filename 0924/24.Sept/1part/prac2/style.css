@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid rgb(212, 181, 181);
+  border-radius: 10px;
+}
+
+.box h3 {
+  margin: 5px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid hsla(0, 93%, 37%, 0.856);
+}
+.inputs p {
+  color: grey;
+  margin-top: 20px;
+}
+.inputs p span {
+  color: red;
+}
+
+.inputs input {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid rgb(182, 176, 176);
+  border-radius: 4px;
+  background-color: rgb(236, 221, 221);
+}
+
+.agreement input {
+  accent-color: rgb(160, 38, 38);
+}
+
+.Submit input {
+  margin-top: 15px;
+  padding: 5px;
+  width: 60px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(168, 18, 18);
+  color: white;
+}

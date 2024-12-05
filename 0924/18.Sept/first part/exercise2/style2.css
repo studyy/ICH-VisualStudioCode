@@ -1,0 +1,16 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+
+ol{
+    list-style: none;
+
+}
+
+.list__item{
+    border: 1px solid red;
+    margin: 10px 0;
+    padding: 10px;
+    width: fit-content;
+}

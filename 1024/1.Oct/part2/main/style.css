@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+}
+
+@media (min-width: 428px) {
+  .container {
+    max-width: 428px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 30px auto;
+    padding: 24px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .date h3 {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .date p {
+    font-size: 15px;
+  }
+
+  .search {
+    position: relative;
+    /* display: inline-block; */
+  }
+
+  .search::before {
+    content: "";
+    background: url(./Assets/Icon.svg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .search input {
+    width: 100%;
+    padding: 12px;
+    background-color: #F7F2FA;
+    border-radius: 28px;
+    border: none;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  .input_field{
+    background-color:#F7F2FA;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 16px;
+  }
+
+  .input_field input{
+    border: 1px solid #79747E;
+    border-radius: 4px;
+    padding: 16px;
+    background-color: transparent;
+  }
+  .btn{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .btn_add{
+    background: #6750A4;
+    color: white;
+    font-size: 14px;
+    width: 115px;
+    padding: 10px;
+    border-radius: 100px;
+    border: none;
+  }
+
+  .btn input{
+    background: transparent;
+    color: #6750A4;
+    font-size: 14px;
+    width: 115px;
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid #79747E;
+  }
+}

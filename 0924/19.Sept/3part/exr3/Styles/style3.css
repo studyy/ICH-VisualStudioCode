@@ -1,0 +1,30 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+  /* Letter-spacing - межбуквенный
+    Line-height - межстрочный отступ */
+  line-height: 1.5em;
+  /* ALLES GROß */
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #12ac11;
+  line-height: 1.2em;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
+
+.list {
+  list-style: none;
+  font-size: 20px;
+  color: #444;
+  font-style: italic;
+}

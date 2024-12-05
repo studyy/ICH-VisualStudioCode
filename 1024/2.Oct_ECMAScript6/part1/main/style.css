@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+.menu{
+    height: 80px;
+    background-color:#333331;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+.left {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+}

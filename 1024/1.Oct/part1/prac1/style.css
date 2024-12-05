@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 32px;
+  background-color: #fff9e5;
+  padding: 16px;
+}
+
+.aside {
+  min-width: 320px;
+  height: 100vh;
+  background-color: #9593ff;
+  border-radius: 16px;
+  position: relative;
+}
+
+.aside::before {
+  background: url(./Assets/Star\ 1.png);
+  width: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+}
+
+.aside::after {
+  background: url(./Assets/bxs_moon.png);
+  width: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.aside ul {
+  list-style: none;
+  /* width: 100%; */
+}
+
+.desktop__aside li {
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 16px;
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.content h2 {
+  color: #9593ff;
+  font-size: 36px;
+}
+
+.content p {
+  font-size: 20px;
+}
+
+.mobile__aside {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
+  .aside {
+    min-width: 180px;
+    border-radius: 0;
+  }
+
+  .aside::before {
+    display: none;
+  }
+
+  .aside::after {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 415px) {
+  .desktop__aside {
+    display: none;
+  }
+  .mobile__aside {
+    display: block;
+  }
+  .aside {
+    min-width: unset;
+    border-radius: 0;
+  }
+
+  .aside::before {
+    display: block;
+    background: url(./Assets/bxs_moon.png);
+    width: 24px;
+    height: 24px;
+    content: "";
+    position: absolute;
+    /* left: 25%; */
+    
+    bottom: 10px;
+    color: red;
+  }
+
+  .mobile__aside li {
+    margin: 8px;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  .container {
+    gap: 16px;
+    padding: 0px;
+  }
+
+  .content {
+    padding: 8px;
+    gap: 16px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

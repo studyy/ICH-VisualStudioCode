@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #e4019a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px 10px 30px;
+}
+header .circle {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+header ul li {
+  color: white;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 38px;
+}
+.list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */

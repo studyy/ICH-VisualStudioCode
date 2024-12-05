@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333331;
+}
+
+.container {
+  padding: 10px;
+  width: fit-content;
+  margin: 100px auto;
+  border: #333331 1px solid;
+  border-radius: 16px;
+  background-color: white;
+}
+.container .details :last-child {
+  background-color: #333331;
+  color: white;
+  padding: 8px;
+  margin: 2px 8px;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */

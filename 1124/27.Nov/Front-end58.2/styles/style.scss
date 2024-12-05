@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #e4019a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px 10px 30px;
+
+  .circle {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: yellow;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+    li {
+      color: white;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 38px;
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+}

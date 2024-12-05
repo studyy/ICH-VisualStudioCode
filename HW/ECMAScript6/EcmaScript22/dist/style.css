@@ -1,0 +1,14 @@
+.container {
+  width: 960px;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+.container .button {
+  background-color: black;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

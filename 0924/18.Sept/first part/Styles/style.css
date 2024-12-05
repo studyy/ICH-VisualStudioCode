@@ -1,0 +1,15 @@
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+ul{
+    list-style: none ;
+}
+
+ol{
+    list-style: none;
+}
+.strong_class {
+  color: gold;
+  background-color: red;
+}
