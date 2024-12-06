@@ -8,6 +8,8 @@ const images = [
   'https://artworld.ru/images/cms/content/catalog2/kartina_v_interier_pejzazh_maslom_rannej_vesnoj_v_lesu_ki200102.jpg',
 ]
 
+const roundButtons = []
+
 const frame = document.createElement('div')
 const cards = document.createElement('div')
 const triggers = document.createElement('div')
@@ -24,6 +26,28 @@ images.forEach(item => {
 frame.append(cards)
 root.append(frame)
 
+// function createRounds() {
+//   const container = document.createElement('div')
+//   container.classList.add('rounds')
+//   images.forEach((item, index) => {
+//     const button = document.createElement('button')
+//     if (index === 0) {
+//       button.classList.add('active')
+//     }
+//     container.append(button)
+//     button.addEventListener('click', () => {
+//       slider_index = index
+//       cards.style.left = `${-1 * slider_index * 500}px`
+//       const allButtons = button.parentElement.children
+//       for (let j = 0; j < allButtons.length; j++) {
+//         allButtons[j].classList.remove('active')
+//       }
+//       button.classList.add('active')
+//     })
+//   })
+//   frame.append(container)
+// }
+
 function createRounds() {
   const container = document.createElement('div')
   container.classList.add('rounds')
@@ -33,17 +57,20 @@ function createRounds() {
       button.classList.add('active')
     }
     container.append(button)
+    roundButtons.push(button) // Button ins Array speichern
     button.addEventListener('click', () => {
       slider_index = index
       cards.style.left = `${-1 * slider_index * 500}px`
-      const allButtons = button.parentElement.children
-      for (let j = 0; j < allButtons.length; j++) {
-        allButtons[j].classList.remove('active')
-      }
-      button.classList.add('active')
+      updateRounds()
     })
   })
   frame.append(container)
+}
+
+function updateRounds() {
+  roundButtons.forEach((btn, index) => {
+    btn.classList.toggle('active', index === slider_index)
+  })
 }
 
 createRounds()
@@ -61,6 +88,7 @@ function goLeft() {
   if (slider_index !== 0) {
     slider_index--
     cards.style.left = `${-1 * slider_index * 500}px`
+    updateRounds()
   }
 }
 
@@ -68,6 +96,7 @@ function goRight() {
   if (slider_index < images.length - 1) {
     slider_index++
     cards.style.left = `${-1 * slider_index * 500}px`
+    updateRounds()
   }
 }
 

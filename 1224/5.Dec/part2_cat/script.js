@@ -1,5 +1,6 @@
 const postContainer = document.querySelector('.post_container')
 const btn_posts = document.querySelector('.btn_posts')
+const post = document.createElement('div')
 
 let postNumber = 1
 
@@ -26,15 +27,13 @@ btn_posts.addEventListener('click', () => {
 })
 
 function renderPosts(obj) {
-  const post = document.createElement('div')
-
   post.classList.add('post')
 
   post.innerHTML = `
     <div class="title">
         <h2>Posts</h2>
     </div>
-    <div class="post">
+    <div class="post-content">
         <h3>${obj.title}</h3>
         <p>${obj.body}</p>
     </div>
@@ -68,5 +67,24 @@ function renderBtn() {
   })
 
   triggers.append(btnLeft, btnRight)
-  postContainer.append(triggers)
+  post.append(triggers)
+}
+
+const constructorNotification = (title, text, type) => {
+  return `
+    <div
+      class="notification notification--${type}"
+    >
+      <div class="notification__icon">
+        <span class="material-symbols-rounded"> done </span>
+      </div>
+      <div class="notification__data">
+        <div class="notification__title">${title}</div>
+        <div class="notification__text">${text}</div>
+      </div>
+      <span class="material-symbols-rounded notification__close">
+        close_small
+      </span>
+    </div>
+  `
 }

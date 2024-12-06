@@ -5,6 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  overflow: hidden;
+}
+
 nav {
   width: 100%;
   background-color: #333331;
@@ -16,13 +20,12 @@ nav {
 nav .nav-menu {
   display: flex;
   flex-direction: column;
-  transform: translateX(-100%);
   background-color: #333331;
   width: 320px;
   height: 100vh;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   transition: all 0.2s linear;
   padding: 12px;
   gap: 16px;
@@ -31,16 +34,43 @@ nav .nav-menu span {
   align-self: flex-end;
 }
 nav .nav-menu__item {
-  display: flex;
-  align-items: center;
   font-size: 15px;
   color: #222222;
   padding: 12px;
   border-radius: 8px;
+}
+nav .nav-menu__item span, nav .nav-menu__item-plus {
   background-color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+nav .nav-menu__item span:hover {
+  cursor: pointer;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
+}
+nav .nav-menu__item ul {
+  list-style: none;
+}
+nav .nav-menu__item-plus {
+  display: none;
+  margin-left: 30px;
+}
+nav .nav-menu__item-plus:hover {
+  cursor: pointer;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: underline;
+}
+nav .nav-menu__item-plus--open {
+  animation: notificationOpen 0.3s ease;
+  display: block;
 }
 nav .nav-menu--open {
-  transform: translateX(0%);
+  left: 0;
   box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.5019607843);
 }
 
@@ -122,6 +152,13 @@ nav .nav-menu--open {
 .block {
   max-width: 700px;
   margin: 0 auto;
+  transition: all 0.2s linear;
+}
+.block--open {
+  position: absolute;
+  transform: translateX(45%);
+  background-color: rgba(0, 0, 0, 0.262745098);
+  height: 100vh;
 }
 .block form input {
   padding: 5px 10px;

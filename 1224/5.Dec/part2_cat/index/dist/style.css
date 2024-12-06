@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../cat.jpg") no-repeat center center/cover;
+  height: 100vh;
+  padding: 100px;
+}
+body .menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 440px;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  align-items: center;
+  color: white;
+  margin: 0px auto;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+}
+body .container .post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+body .container .post .title {
+  font-size: 24px;
+  width: 260px;
+  height: 45px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  background-color: black;
+  border-radius: 8px 8px 0 0;
+  border: 2px solid white;
+  border-bottom: none;
+}
+body .container .post .post_content {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  border: 2px solid white;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 660px;
+}
+body .container .trigger {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: -30px;
+  cursor: pointer;
+}
+body .notification {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  max-height: fit-content;
+  border-radius: 12px;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.3490196078);
+  animation: notificationOpen 0.3s ease;
+  transform-origin: 100% 0;
+}
+body .notification__icon {
+  background-color: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .notification__close {
+  align-self: start;
+  margin-left: auto;
+  color: white;
+  cursor: pointer;
+}
+body .notification__data {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+}
+body .notification__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+body .notification__text {
+  font-size: 14px;
+}
+body .notification--success {
+  background-color: rgb(63, 197, 63);
+}
+body .notification--error {
+  background-color: rgb(223, 44, 44);
+}
+@keyframes notificationOpen {
+  0% {
+    transform: translateX(100%);
+    scale: 70%;
+  }
+  100% {
+    transform: translateX(0);
+    scale: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

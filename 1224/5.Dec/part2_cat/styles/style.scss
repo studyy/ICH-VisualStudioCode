@@ -1,3 +1,33 @@
-body {
-  //   background-color: gray;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  height: 97vh;
+
+  background: url('../assets/cat.jpg') no-repeat center center / cover;
+
+  nav {
+    padding: 120px 0;
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 440px;
+      height: 90px;
+      margin: 0 auto;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: white;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+    }
+  }
 }

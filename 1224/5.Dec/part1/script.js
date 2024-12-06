@@ -1,7 +1,15 @@
 const navMenu = document.querySelector('#navMenu')
+const block = document.querySelector('.block')
 
 const toggleMenu = () => {
   navMenu.classList.toggle('nav-menu--open')
+  block.classList.toggle('block--open')
+}
+
+const toggleElement = e => {
+  const element = e.querySelectorAll('.nav-menu__item-plus')
+  console.log(element)
+  element.forEach(item => item.classList.toggle('nav-menu__item-plus--open'))
 }
 
 function createOrder(e) {

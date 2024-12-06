@@ -1,0 +1,11 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+"sass": "sass --watch style/style.scss:dist/style.css"  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
