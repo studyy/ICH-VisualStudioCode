@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Rubik", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    
+}
+
+.intro {
+    background-color: #5DBC83;
+    background-image: url(../image/Lines.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__content {
+    width: 1290px;
+    margin: 0 auto;
+    padding: 25px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header-menu {
+    background-color: #5DBC83;
+}
+
+.header-navbar__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+}
+
+.header-navbar__link {
+    color: white;
+}
+
+.intro-container {
+    width: 1290px;
+    margin: 0 auto;
+}
+
+.intro-title {
+    display: flex;
+    width: 1200px;
+}
+
+.intro-title h1 {
+    color: white;
+    font-size: 60px;
+    line-height: 2.5;
+    position: relative;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-title h1 img {
+    margin-left: 60px;
+    position: absolute;
+    top: 20px;
+}
+
+.intro-title h1 p {
+    width: 450px;
+    font-weight: 300;
+    color: white;
+    font-size: 16px;
+    float: left;
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+.intro-content__poster {
+    display: inline-block;
+    position: relative;
+
+}
+
+.intro-content__phone1 {
+    position: relative;
+    z-index: 1;
+}
+
+.intro-content__phone2 {
+    position: absolute;
+    top: 150px;
+    left: 325px;
+    z-index: 1;
+}
+
+.intro-content__card1,
+.intro-content__card2,
+.intro-content__card3 {
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    padding: 30px;
+}
+
+.intro-content__card1 {
+    width: 275px;
+    height: 192px;
+    top: 325px;
+    left: 150px;
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.intro-content__card1 h3 {
+    margin-top: 15px;
+}
+
+span {
+    display: block;
+}
+.intro-content__card2 {
+    width: 265px;
+    height: 192px;
+    top: 10px;
+    left: 520px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.intro-content__card2 h3 {
+    margin-top: 15px;
+}
+
+.intro-content__card3 {
+    width: 325px;
+    height: 340px;
+    top: 360px;
+    left: 720px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.intro-content__card3 img {
+    margin: 15px 0;
+}
+
+.intro-content_pay-card a {
+    display: flex;
+    gap: 30px;
+    color: black;
+    padding: 25px 50px;
+    width: 288px;
+    height: 96px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 650px;
+    left: -60px;
+}
+
+.intro-ecllipse {
+    position: absolute;
+    top: -250px;
+    left: 100px;
+    z-index: 0;
+}
+
+.possibilities {
+    background-color: white;
+    font-size: 18px;
+    font-weight: 300;
+    width: 1290px;
+    margin: 0 auto;
+}
+
+.possibilities-container {
+    background-color: #FFFFFF;
+    min-height: 1050px;
+    padding: 100px 155px 50px 155px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.possibilities-title h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 48px;
+}
+
+.possibilities-content {
+    display: flex;
+    min-width: 1290px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.possibilities-content__background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    z-index: 0;
+}
+
+.possibilities-content__item {
+    display: flex;
+    padding: 11px 0;
+    align-items: center;
+    max-width: 411px;
+    max-height: 99px;
+    margin-right: 50px;
+    margin-bottom: 104px;
+    z-index: 1;
+}
+
+.possibilities-content__item--left-side {
+    margin-right: 21px;
+}
+
+.possibilities-content__item--left-side h3 {
+    font-size: 21px;
+    font-weight: 500;
+    text-align: end;
+    margin-bottom: 10px;
+    width: 291px;
+}
+
+.possibilities-content__item--left-side p {
+    text-align: end;
+    width: 291px;
+}
+
+.news-container {
+    padding: 90px 78px 90px 110px;
+    background-color: #41B36F;
+    background-image: url(../image/Lines.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 1290px;
+    margin: 0 auto;
+}
+
+.news-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.news-menu__title h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.news-menu__btn a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border: 1px solid white;
+    border-radius: 50px;
+    min-width: 190px;
+}
+
+.news-content {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.news-content__item {
+    max-width: 390px;
+}
+
+.news-img{
+    width: 390px;
+    border-radius: 20px 20px 0 0;
+    border: 0.5px solid #666666;
+}
+
+.news-content__item--text {
+    background-color: white;
+    height: 183px;
+    border: 0.5px solid #666666;;
+    padding: 25px;
+    margin-top: -4.5px;
+}
+
+.news-content__item--text h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    height: 52px;
+    width: 280px;
+}
+
+.news-item__update {
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.news-item__discription {
+    font-weight: 300;
+}
+
+.news-item__link {
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    border: 0.5px solid #666666;
+}
+
+.news-item__link a {
+    display: flex;
+    align-items: center;
+    padding: 25px 31px;
+    color: black;
+}
+
+.news-content::before {
+    content: url(../image/arrow-left.png);
+    color: white;
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    top: 200px;
+    left: -77px;
+    bottom: 0;
+    right: 0;
+}
+
+.news-content::after {
+    content: url(../image/arrow-right.png);
+    color: white;
+    position: absolute;
+    width: 77px;
+    height: 77px;
+    top: 200px;
+    left: 1230px;
+    bottom: 0;
+    right: 0;
+}
+
+.item-steps {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}

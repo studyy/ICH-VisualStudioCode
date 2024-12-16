@@ -132,7 +132,7 @@ header {
 }
 
 .tel__images::before {
-  content: "";
+  content: '';
   background: url(./Assets/Mockup.png) no-repeat;
   width: 1100px;
   height: 831px;
@@ -142,7 +142,7 @@ header {
 }
 
 .tel__images::after {
-  content: "";
+  content: '';
   background: url(./Assets/Mockup2.png) no-repeat;
   width: 1100px;
   height: 831px;
@@ -150,8 +150,6 @@ header {
   top: 173px;
   left: 321px;
 }
-
-
 
 .Section2 {
   background: white url(./Assets/Phone.png) no-repeat center;
