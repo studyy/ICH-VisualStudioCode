@@ -1,0 +1,31 @@
+.list {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.list h3 {
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.removeBtn {
+  padding: 5px;
+}
