@@ -20,7 +20,7 @@ export default function Rating() {
       <img
         className={styles.ratingImage}
         src={ratingList[ratingValue]}
-        alt={`Rating: ${ratingValue + 1}`}
+        alt={`Rating: ${ratingValue + 1} star`}
       />
       <button onClick={() => setRatingValue(0)}>Плохо</button>
       <button onClick={() => setRatingValue(1)}>Приемлемо</button>
