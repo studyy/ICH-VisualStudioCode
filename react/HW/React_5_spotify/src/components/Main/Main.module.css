@@ -22,7 +22,6 @@ section {
   border-radius: 65px;
   padding: 36px 57px 41px 57px;
   max-width: 446px;
-  overflow: visible;
   display: flex;
   justify-content: space-between;
   align-items: center;

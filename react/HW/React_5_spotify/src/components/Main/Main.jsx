@@ -16,9 +16,8 @@ export default function Main() {
         <br /> with
       </h4>
       <div className={styles.links}>
-        <a href=''>
+        <a className={styles.chtototam} href=''>
           <img
-            className={styles.chtototam}
             src={imgSrc}
             alt='Apple'
             onMouseOver={() => setImgSrc(AppleHover)}

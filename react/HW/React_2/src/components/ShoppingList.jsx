@@ -3,7 +3,7 @@ function ShoppingList(props) {
     return (
       <ul>
         {props.items.map(item => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
     )

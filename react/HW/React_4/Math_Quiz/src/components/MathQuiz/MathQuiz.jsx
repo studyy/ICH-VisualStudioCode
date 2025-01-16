@@ -27,7 +27,7 @@ export default function MathQuiz() {
       <p>Current score: {score}</p>
       <div>
         <p>
-          How much is {numbers.a} + {numbers.b}{' '}
+          How much is {numbers.a} + {numbers.b}?
         </p>
         <Answer updatePoints={updatePoints} />
       </div>

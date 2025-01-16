@@ -1,0 +1,17 @@
+.html,
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+
+  overflow-x: auto;
+  background: linear-gradient(
+    rgba(173, 216, 230, 0.37),
+    rgba(238, 130, 238, 0.349)
+  );
+}
+
+ul,
+ol {
+  list-style: none;
+}

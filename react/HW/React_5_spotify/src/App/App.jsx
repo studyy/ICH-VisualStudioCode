@@ -8,8 +8,6 @@ function App() {
     <>
       <Container>
         <Header />
-      </Container>
-      <Container>
         <Main />
       </Container>
     </>

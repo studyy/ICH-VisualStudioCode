@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 2px solid rgb(119, 21, 119);
+  border-radius: 8px;
+  padding: 30px;
+  background-color: rgb(162, 212, 212);
+}

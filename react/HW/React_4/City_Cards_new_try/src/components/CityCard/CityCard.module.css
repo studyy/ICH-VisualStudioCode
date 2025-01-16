@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card h3 {
+  font-size: 24px;
+}
+
+.image {
+  max-width: 350px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.facts {
+  list-style: disc;
+}

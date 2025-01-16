@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+  padding-bottom: 80px;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  background-color: rgb(122, 185, 122);
+  color: rgb(8, 92, 8);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.select {
+  background-color: rgb(70, 170, 70);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid green;
+  outline: none;
+  padding: 15px 5px;
+  width: 120px;
+}
