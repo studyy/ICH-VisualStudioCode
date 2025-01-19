@@ -20,6 +20,10 @@ export default function SmartTodoList() {
     SetNewTask('')
   }
 
+  function handleDeleteAll() {
+    setTaskList([])
+  }
+
   return (
     <div>
       <h2>Spisok zadach:</h2>
@@ -29,11 +33,20 @@ export default function SmartTodoList() {
         <button>Dobavit zadachu</button>
       </form>
 
-      <ul>
-        {taskList.map(task => (
-          <Task key={task.id} task={task} setTaskList={setTaskList} />
-        ))}
-      </ul>
+      {taskList.length < 1 ? (
+        <p>Tasklist is empty</p>
+      ) : (
+        <>
+          <button type='button' onClick={handleDeleteAll}>
+            Alles Löschen
+          </button>
+          <ul>
+            {taskList.map(task => (
+              <Task key={task.id} task={task} setTaskList={setTaskList} />
+            ))}
+          </ul>
+        </>
+      )}
     </div>
   )
 }
