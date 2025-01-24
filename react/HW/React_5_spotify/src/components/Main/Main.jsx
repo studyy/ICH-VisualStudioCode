@@ -10,8 +10,8 @@ export default function Main() {
 
   return (
     <section>
-      <h1>LIFE IS WASTED ON THE LIVING</h1>
-      <h4>
+      <h1 className={styles.title}>LIFE IS WASTED ON THE LIVING</h1>
+      <h4 className={styles.signIn}>
         Sign in
         <br /> with
       </h4>

@@ -1,0 +1,23 @@
+.settingsPanel {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #262626;
+}
+
+.setting {
+  margin-bottom: 15px;
+}
+
+.setting label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.setting select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 200px;
+}
