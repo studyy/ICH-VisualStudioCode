@@ -1,0 +1,21 @@
+.card {
+  width: 100px;
+  height: 100px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: lightblue;
+  cursor: pointer;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flippedCard {
+  width: 100px;
+  height: 100px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: lightgreen;
+  cursor: pointer;
+  transform: rotateY(180deg);
+}

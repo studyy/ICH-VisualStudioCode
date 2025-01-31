@@ -1,7 +1,13 @@
+import { GameProvider } from '../../context/GameContext'
+import Main from '../Main/Main'
 import './App.css'
 
 function App() {
-  return <></>
+  return (
+    <GameProvider>
+      <Main />
+    </GameProvider>
+  )
 }
 
 export default App

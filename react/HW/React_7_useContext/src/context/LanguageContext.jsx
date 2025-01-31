@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react'
 
-export const LanguageContext = createContext()
+export const LanguageContext = createContext(null)
 
 export function LanguageProvider({ children }) {
   const [currentLanguage, setCurrentLanguage] = useState('ru')
@@ -8,14 +8,10 @@ export function LanguageProvider({ children }) {
   const translations = {
     ru: {
       title: 'Список',
-      addButton: 'Добавить',
-      placeholder: 'Введите имя',
       switchLanguage: 'Switch to English',
     },
     en: {
       title: 'List',
-      addButton: 'Add',
-      placeholder: 'Enter name',
       switchLanguage: 'Переключить на русский',
     },
   }
