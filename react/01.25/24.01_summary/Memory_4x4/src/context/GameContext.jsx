@@ -21,7 +21,9 @@ export function GameProvider({ children }) {
   useEffect(() => {
     if (flippedCards.length === 2) {
       setTurns(prevTurns => prevTurns + 1) // dont use increment
+
       const isMatch = flippedCards[0].emoji === flippedCards[1].emoji
+      console.log('flipped', flippedCards)
 
       if (isMatch) {
         const newMatches = matchesLeft - 1
@@ -85,15 +87,27 @@ export function GameProvider({ children }) {
   }
 
   function handleClick(id) {
-    if (flippedCards.includes(id) || flippedCards.length >= 2) {
-      return
+    const card = cards.find(card => card.id === id)
+
+    const cardsIDs = flippedCards.map(card => card.id)
+    console.log('flipped', flippedCards)
+    console.log('id', cardsIDs)
+
+    // emoji: '🐶'
+    // id: 0.9363337729618582
+    // isFlipped: false
+    // isMatched: false
+
+    if (cardsIDs.includes(id) || flippedCards.length >= 2) {
+      return // if true, stop there!
     }
+    console.log(cardsIDs.includes(id), flippedCards.length >= 2)
 
     setCards(
       cards.map(card => (card.id === id ? { ...card, isFlipped: true } : card))
     )
 
-    setFlippedCards(prevFlip => [...prevFlip, id])
+    setFlippedCards(prevFlip => [...prevFlip, card])
   }
 
   function reset() {
