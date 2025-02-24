@@ -14,10 +14,12 @@ const initialState = {
 // cart = [{ id: '1', quantity: 1}, { id: '1', quantity: 1}]
 
 export const cartReducer = (state = initialState, action) => {
+  console.log('Reducer', state)
+
   switch (action.type) {
-    case 'ADD_TO_CART':
+    case 'ADD_TO_CART': {
       const existingProduct = state.cart.find(
-        product => product.id === action.payload
+        product => product.id === action.payload.id
       )
       // if (product in cart) {
       //   quantity этого продукта + 1
@@ -26,14 +28,18 @@ export const cartReducer = (state = initialState, action) => {
         return {
           ...state,
           cart: state.cart.map(product =>
-            product.id === action.payload
+            product.id === action.payload.id
               ? { ...product, quantity: product.quantity + 1 }
               : product
           ),
         }
       }
 
-      return { ...state, cart: [...cart, { id: action.payload, quantity: 1 }] }
+      return {
+        ...state,
+        cart: [...state.cart, { ...action.payload, quantity: 1 }],
+      }
+    }
 
     case 'REMOVE_FROM_CART':
       return {
@@ -52,6 +58,6 @@ export const cartReducer = (state = initialState, action) => {
       }
 
     default:
-      state
+      return state
   }
 }
